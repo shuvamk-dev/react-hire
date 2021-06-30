@@ -1,0 +1,11 @@
+.header {
+  display: flex;
+  justify-content: flex-start;
+  color: indigo;
+  font-size: 32px;
+  font-weight: 800;
+  align-items: center;
+}
+.header i {
+  margin-right: 4px;
+}
