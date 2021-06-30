@@ -18,9 +18,15 @@ function Home() {
         </p>
         <div className={styles.introRight}>
           Find this useful?
-          <div className={styles.githubStar}>
-            <i class="devicon-github-original colored"></i> Star
-          </div>
+          <a
+            href="https://github.com/shuvamk/react-hire"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div className={styles.githubStar}>
+              <i class="devicon-github-original colored"></i> Star
+            </div>
+          </a>
         </div>
       </div>
       {data.map((company) => {
