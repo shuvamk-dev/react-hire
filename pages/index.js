@@ -15,6 +15,10 @@ function Index() {
         />
         <link
           rel="stylesheet"
+          href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css"
+        ></link>
+        <link
+          rel="stylesheet"
           href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.12.0/devicon.min.css"
         ></link>
         <title>React Hire</title>
