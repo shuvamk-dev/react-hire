@@ -3,5 +3,4 @@ module.exports = {
   images: {
     domains: ["media-exp3.licdn.com"],
   },
-  assetPrefix: "/",
 };
