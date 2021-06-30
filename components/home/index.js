@@ -24,13 +24,13 @@ function Home() {
             rel="noopener noreferrer"
           >
             <div className={styles.githubStar}>
-              <i class="devicon-github-original colored"></i> Star
+              <i className="devicon-github-original colored"></i> Star
             </div>
           </a>
         </div>
       </div>
       {data.map((company) => {
-        return <CompanyCard company={company} />;
+        return <CompanyCard company={company} key={company.id} />;
       })}
     </div>
   );
