@@ -8,6 +8,9 @@
   align-items: center;
   border-radius: 6px;
 }
+.bookmark {
+  display: flex;
+}
 .card_logo {
   height: 80px;
 }
@@ -29,6 +32,8 @@
   padding: 1px 8px;
   font-size: 10px;
   border-radius: 6px;
+  display: flex;
+  align-items: center;
 }
 .location {
   font-size: 12px;
@@ -55,6 +60,15 @@
   margin-right: 4px;
   padding-top: 2px;
 }
+
+.options {
+  display: flex;
+  align-items: center;
+}
+.bookmarkIcon {
+  margin-right: 4px;
+}
+
 @media only screen and (max-width: 1024px) {
   .card {
     width: 90%;
