@@ -39,4 +39,37 @@ export const Companies = [
     logo: "https://media-exp3.licdn.com/dms/image/C560BAQFkP-cSbCe28A/company-logo_200_200/0/1604400287450?e=1632960000&v=beta&t=E-W8I9pSx7wViKD9--ICAg00gsPKbe6dCTxiW2AxMDI",
     location: "Bengaluru, Karnataka",
   },
+  {
+    id: 6,
+    name: "Treebo Hotels",
+    website:
+      "https://www.linkedin.com/company/treebohotels/jobs/?originalSubdomain=in",
+    domain: "Hospitality",
+    logo: "https://media-exp3.licdn.com/dms/image/C4E0BAQH-f7GkG6f9ww/company-logo_200_200/0/1601487380882?e=1632960000&v=beta&t=imrXmfWgnGLx3Yk-iFVhWppaq1UUygE05aSbJtDnrn8",
+    location: "Bengaluru, Karnataka",
+  },
+  {
+    id: 7,
+    name: "PharmEasy",
+    website: "https://pharmeasy.in/careers/",
+    domain: "Healthtech",
+    logo: "https://media-exp3.licdn.com/dms/image/C510BAQH4-n66jA6urw/company-logo_200_200/0/1552381250138?e=1632960000&v=beta&t=WQFtJHvUAYP_fKqesyNDRL_DRfb-eW7A8rgUOqKfmsc",
+    location: "Mumbai, Maharashtra",
+  },
+  {
+    id: 8,
+    name: "Upstox",
+    website: "https://jobs.lever.co/upstox",
+    domain: "Fintech",
+    logo: "https://media-exp3.licdn.com/dms/image/C510BAQGQMzN22PJz1g/company-logo_200_200/0/1552649200386?e=1632960000&v=beta&t=ZEGcdRrXhgIRjWTr7MEWdWNvfiWkPUUWeXqTevLBg3o",
+    location: "Mumbai, Maharashtra",
+  },
+  {
+    id: 9,
+    name: "Dream11",
+    website: "https://jobs.lever.co/dreamsports",
+    domain: "Gametech",
+    logo: "https://media-exp3.licdn.com/dms/image/C4D0BAQHNFdSdu8chdQ/company-logo_200_200/0/1519890073011?e=1632960000&v=beta&t=17055R4HwDSB4JxnkhPiq0GO_Vaov24IdySPAIdPBt0",
+    location: "Mumbai, Maharashtra",
+  },
 ];
