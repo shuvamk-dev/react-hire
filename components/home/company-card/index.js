@@ -14,7 +14,11 @@ function CompanyCard({ company }) {
         </div>
       </div>
       <div className={styles.cardRight}>
-        <div>Visit</div>
+        <a href={company.website} target="_blank" rel="noopener noreferrer">
+          <div className={styles.visit}>
+            <i class="fi-rr-globe"></i>Visit
+          </div>
+        </a>
         <div className={styles.domain}>{company.domain}</div>
       </div>
     </div>

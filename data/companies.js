@@ -2,7 +2,7 @@ export const Companies = [
   {
     id: 1,
     name: "WazirX",
-    webiste: "https://careers.wazirx.com/jobs",
+    website: "https://careers.wazirx.com/jobs",
     domain: "Fintech",
     logo: "https://media-exp3.licdn.com/dms/image/C4E0BAQHfjTMcCunuOw/company-logo_200_200/0/1623824571975?e=1632960000&v=beta&t=_pCbSyYClLIXcJlTI7ohW5Z1bqVMCqPlmyo5vnTdRwU",
     location: "Mumbai, Maharashtra",
@@ -18,7 +18,7 @@ export const Companies = [
   {
     id: 3,
     name: "HackerEarth",
-    webiste: "https://hackerearthjobs.recruiterbox.com/",
+    website: "https://hackerearthjobs.recruiterbox.com/",
     domain: "Software",
     logo: "https://media-exp3.licdn.com/dms/image/C4D0BAQHgoMowHLH6Rw/company-logo_200_200/0/1622540336050?e=1632960000&v=beta&t=uPB6QAiQxl9kgeuLpTNFfJXRsuacPlGfgwTk82Pd2KA",
     location: "Bangalore, Karnataka",
@@ -26,7 +26,7 @@ export const Companies = [
   {
     id: 4,
     name: "Zebpay",
-    webiste: "https://zebpay.com/careers/",
+    website: "https://zebpay.com/careers/",
     domain: "Fintech",
     logo: "https://media-exp3.licdn.com/dms/image/C560BAQFsTTpZZeQAtg/company-logo_200_200/0/1583130938756?e=1632960000&v=beta&t=ZSolQDLUlpodIlrxADKJZdeujcbJyqSXXGsOUP1eZ04",
     location: "Ahmedabad, Gujarat",
