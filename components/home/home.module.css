@@ -4,15 +4,58 @@
   width: 70%;
   margin: auto;
 }
+.intro {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+.intro p {
+  width: 70%;
+}
+.introRight {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 
+.githubStar {
+  border: 1px solid black;
+  width: max-content;
+  padding: 2px 16px;
+  border-radius: 6px;
+}
 @media only screen and (max-width: 1024px) {
   .home {
     width: 90%;
+  }
+  .intro {
+    flex-direction: column;
+  }
+  .intro p {
+    width: 90%;
+  }
+  .introRight {
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-bottom: 24px;
+  }
+  .githubStar {
+    margin-left: 8px;
   }
 }
 @media only screen and (max-width: 512px) {
   .home {
     width: 100%;
     padding: 0px 12px;
+  }
+  .intro {
+    flex-direction: column;
+  }
+  .intro p {
+    width: 100%;
+  }
+  .introRight {
+    flex-direction: row;
+    justify-content: flex-start;
   }
 }

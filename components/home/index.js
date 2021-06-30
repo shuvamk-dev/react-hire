@@ -10,6 +10,19 @@ function Home() {
     <div className={styles.home}>
       <Header />
       <Separator />
+      <div className={styles.intro}>
+        <p>
+          This is a handpicked list of Indian startups that use ReactJS as their
+          frontend framework. This will help you in job hunting, startup
+          research etc.
+        </p>
+        <div className={styles.introRight}>
+          Find this useful?
+          <div className={styles.githubStar}>
+            <i class="devicon-github-original colored"></i> Star
+          </div>
+        </div>
+      </div>
       {data.map((company) => {
         return <CompanyCard company={company} />;
       })}
