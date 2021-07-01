@@ -1,4 +1,4 @@
-import { ADD_TO_SAVE } from "../../actionTypes/react";
+import { ADD_TO_SAVE, DELETE_FROM_SAVE } from "../../actionTypes/react";
 const initialState = {
   companyList: [
     {
@@ -85,6 +85,14 @@ const ReactReducer = (state = initialState, action) => {
       return {
         ...state,
         saved: [...state.saved, data],
+      };
+    }
+    case DELETE_FROM_SAVE: {
+      const { data } = action;
+      const deletedArray = state.saved.filter((item) => item.id !== data.id);
+      return {
+        ...state,
+        saved: deletedArray,
       };
     }
     default:

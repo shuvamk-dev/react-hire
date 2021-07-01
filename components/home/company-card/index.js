@@ -1,13 +1,13 @@
 import React from "react";
 import { connect } from "react-redux";
-import { addToSave } from "../../../reduxstore/actions/react";
+import { addToSave, deleteFromSave } from "../../../reduxstore/actions/react";
 import styles from "./company-card.module.css";
 
-function CompanyCard({ company, addToSave, saved }) {
+function CompanyCard({ company, addToSave, saved, deleteFromSave }) {
   const isSaved = saved.includes(company);
   console.log(isSaved);
   const handleBookmark = () => {
-    addToSave(company);
+    isSaved ? deleteFromSave(company) : addToSave(company);
   };
   return (
     <div className={styles.card}>
@@ -54,6 +54,7 @@ const mapStateToProps = ({ react }) => {
 const mapDispatchToProps = (dispatch) => {
   return {
     addToSave: (data) => dispatch(addToSave(data)),
+    deleteFromSave: (data) => dispatch(deleteFromSave(data)),
   };
 };
 export default connect(mapStateToProps, mapDispatchToProps)(CompanyCard);
