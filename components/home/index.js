@@ -51,9 +51,20 @@ function Home(props) {
                 <i className="fi-rr-cross-circle"></i>
               </div>
             </div>
-            {saved.map((company) => {
-              return <SavedCard company={company} key={company.id} />;
-            })}
+            {saved.length === 0 ? (
+              <div className={styles.empty}>
+                <img
+                  src="https://cdni.iconscout.com/illustration/premium/thumb/searching-in-box-3428236-2902705.png"
+                  className={styles.emptyImage}
+                  alt="empty saved"
+                />
+                Uh oh! You haven't bookmarked any startup
+              </div>
+            ) : (
+              saved.map((company) => {
+                return <SavedCard company={company} key={company.id} />;
+              })
+            )}
           </div>
         ) : (
           <div className={styles.companyList}>
@@ -66,9 +77,20 @@ function Home(props) {
           <div className={styles.savedTop}>
             <label className={styles.savedTitle}>Bookmarked Startups</label>
           </div>
-          {saved.map((company) => {
-            return <SavedCard company={company} key={company.id} />;
-          })}
+          {saved.length === 0 ? (
+            <div className={styles.empty}>
+              <img
+                src="https://cdni.iconscout.com/illustration/premium/thumb/searching-in-box-3428236-2902705.png"
+                className={styles.emptyImage}
+                alt="empty saved"
+              />
+              Uh oh! You haven't bookmarked any startup
+            </div>
+          ) : (
+            saved.map((company) => {
+              return <SavedCard company={company} key={company.id} />;
+            })
+          )}
         </div>
       </div>
     </div>

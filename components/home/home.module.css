@@ -70,6 +70,16 @@
   display: none;
 }
 
+.empty {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+.emptyImage {
+  height: 160px;
+}
 @media only screen and (max-width: 1024px) {
   .home {
     width: 90%;
