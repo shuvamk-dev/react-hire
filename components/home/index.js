@@ -3,10 +3,10 @@ import styles from "./home.module.css";
 import Header from "../common/header/index";
 import Separator from "../common/separator/index";
 import CompanyCard from "./company-card/index";
-import { Companies } from "../../data/companies";
 import { connect } from "react-redux";
 function Home(props) {
-  const { list } = props;
+  const { list, saved } = props;
+  console.log(saved);
   return (
     <div className={styles.home}>
       <Header />
@@ -39,6 +39,7 @@ function Home(props) {
 const mapStateToProps = ({ react }) => {
   return {
     list: react.companyList,
+    saved: react.saved,
   };
 };
 export default connect(mapStateToProps)(Home);

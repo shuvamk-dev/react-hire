@@ -1,3 +1,4 @@
+import { ADD_TO_SAVE } from "../../actionTypes/react";
 const initialState = {
   companyList: [
     {
@@ -74,10 +75,18 @@ const initialState = {
       location: "Mumbai, Maharashtra",
     },
   ],
+  saved: [],
 };
 
 const ReactReducer = (state = initialState, action) => {
   switch (action.type) {
+    case ADD_TO_SAVE: {
+      const { data } = action;
+      return {
+        ...state,
+        saved: [...state.saved, data],
+      };
+    }
     default:
       return state;
   }

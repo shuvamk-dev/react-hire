@@ -1,11 +1,20 @@
 import React from "react";
+import { connect } from "react-redux";
+import { addToSave } from "../../../reduxstore/actions/react";
 import styles from "./company-card.module.css";
-// import Image from "next/image";
-function CompanyCard({ company }) {
+
+function CompanyCard({ company, addToSave }) {
+  const handleBookmark = () => {
+    addToSave(company);
+  };
   return (
     <div className={styles.card}>
       <div>
-        <img src={company.logo} className={styles.card_logo} />
+        <img
+          src={company.logo}
+          className={styles.card_logo}
+          alt="company logo"
+        />
         {/* <Image
           src={company.logo}
           height={80}
@@ -22,7 +31,7 @@ function CompanyCard({ company }) {
       </div>
       <div className={styles.cardRight}>
         <div className={styles.options}>
-          <div className={styles.bookmarkIcon}>
+          <div className={styles.bookmarkIcon} onClick={handleBookmark}>
             <i className="fi-rr-bookmark"></i>
           </div>
           <a href={company.website} target="_blank" rel="noopener noreferrer">
@@ -37,4 +46,9 @@ function CompanyCard({ company }) {
   );
 }
 
-export default CompanyCard;
+const mapDispatchToProps = (dispatch) => {
+  return {
+    addToSave: (data) => dispatch(addToSave(data)),
+  };
+};
+export default connect(null, mapDispatchToProps)(CompanyCard);
