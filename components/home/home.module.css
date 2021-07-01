@@ -10,20 +10,66 @@
   margin-bottom: 12px;
 }
 .intro p {
-  width: 70%;
+  width: 60%;
 }
 .introRight {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-
+.bookmarkOption {
+  display: none;
+}
 .githubStar {
   border: 1px solid black;
   width: max-content;
   padding: 2px 16px;
   border-radius: 6px;
 }
+.bookmarkOption {
+  border: 1px solid black;
+  width: max-content;
+  padding: 2px 16px;
+  border-radius: 6px;
+}
+.bookmarkOption i {
+  display: flex;
+  align-items: center;
+  margin-right: 4px;
+}
+.listContainer {
+  display: flex;
+  justify-content: space-between;
+}
+.companyList {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+.savedList {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+.githubOption {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.savedTop {
+  margin: 12px 0px;
+  display: flex;
+  justify-content: space-between;
+}
+.savedTitle {
+  font-size: 18px;
+  z-index: 2;
+  font-weight: 700;
+}
+.savedListMobile {
+  display: none;
+}
+
 @media only screen and (max-width: 1024px) {
   .home {
     width: 90%;
@@ -36,11 +82,30 @@
   }
   .introRight {
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: space-between;
     margin-bottom: 24px;
   }
-  .githubStar {
-    margin-left: 8px;
+
+  .companyList {
+    width: 90%;
+  }
+  .savedList {
+    display: none;
+  }
+  .bookmarkOption {
+    display: flex;
+  }
+  .introRight {
+    align-items: center;
+    width: 90%;
+  }
+  .savedListMobile {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .closeIcon {
+    font-size: 28px;
   }
 }
 @media only screen and (max-width: 512px) {
@@ -56,6 +121,12 @@
   }
   .introRight {
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: space-between;
+  }
+  .companyList {
+    width: 100%;
+  }
+  .introRight {
+    width: 100%;
   }
 }
