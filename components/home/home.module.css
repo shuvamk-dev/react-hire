@@ -85,7 +85,9 @@
     justify-content: space-between;
     margin-bottom: 24px;
   }
-
+  .githubOption {
+    align-items: flex-start;
+  }
   .companyList {
     width: 90%;
   }
