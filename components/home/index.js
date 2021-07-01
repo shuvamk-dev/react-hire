@@ -4,8 +4,9 @@ import Header from "../common/header/index";
 import Separator from "../common/separator/index";
 import CompanyCard from "./company-card/index";
 import { Companies } from "../../data/companies";
-function Home() {
-  const data = Companies;
+import { connect } from "react-redux";
+function Home(props) {
+  const { list } = props;
   return (
     <div className={styles.home}>
       <Header />
@@ -29,11 +30,15 @@ function Home() {
           </a>
         </div>
       </div>
-      {data.map((company) => {
+      {list.map((company) => {
         return <CompanyCard company={company} key={company.id} />;
       })}
     </div>
   );
 }
-
-export default Home;
+const mapStateToProps = ({ react }) => {
+  return {
+    list: react.companyList,
+  };
+};
+export default connect(mapStateToProps)(Home);
