@@ -58,7 +58,7 @@ function Home(props) {
                   className={styles.emptyImage}
                   alt="empty saved"
                 />
-                Uh oh! You haven't bookmarked any startup
+                <p> {"Uh oh! You haven't bookmarked any startup"}</p>
               </div>
             ) : (
               saved.map((company) => {
@@ -84,7 +84,7 @@ function Home(props) {
                 className={styles.emptyImage}
                 alt="empty saved"
               />
-              Uh oh! You haven't bookmarked any startup
+              <p> {"Uh oh! You haven't bookmarked any startup"}</p>
             </div>
           ) : (
             saved.map((company) => {
